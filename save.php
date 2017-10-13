@@ -7,6 +7,8 @@
     $cliente =new MongoDB\Client("mongodb://localhost:27017");
     $collection = $cliente -> usuarios -> clientes;
 
+    $collection -> createIndex(array("email" => 1), array("unique" => 1));
+
     $resultado = null;
 
     if(isset($_POST["session"]) && count($_POST["session"]) == 5){

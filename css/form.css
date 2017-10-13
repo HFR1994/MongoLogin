@@ -1,0 +1,91 @@
+
+.applyFilter{
+  margin: 50px 0;
+}
+
+.applyFilter .row > div {
+  padding: 20px 50px 40px 50px;
+  background: #f8f8f8 left top repeat;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
+}
+
+.applyFilter .row > div img {
+  width: 70%;
+  height:auto;
+  margin: auto;
+}
+
+.applyFilter .row input {
+  width: 100%;
+  border: 1px solid #ddd;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+  color: #888;
+  font-size: 16px;
+}
+
+.applyFilter .row textarea{
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.applyFilter .row input[type='submit']{
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  padding: 10px 10px;
+  height: 100%;
+}
+
+.applyFilter .row input[type='submit']:hover{
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.applyFilter .row input:focus {
+  border: 1px solid #ccc;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.applyFilter .row label {
+  margin: 7px 0 10px 5px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.applyFilter .row label span {
+  font-style: italic;
+}
+
+.applyFilter .row input:-moz-placeholder { color: #aaa; }
+.applyFilter .row input:-ms-input-placeholder { color: #aaa; }
+.applyFilter .row input::-webkit-input-placeholder { color: #aaa; }
+
+.error_message{
+  color: red;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 517px) {
+  .applyFilter .row > div {
+    padding: 20px 10px 40px 10px;
+  }
+
+  .applyFilter .row > div img {
+    width: 100%;
+  }
+
+}

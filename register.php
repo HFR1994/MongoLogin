@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/form.css" type="text/css">
 </head>
 
-<body>
+<body onkeypress="console.log(event.charCode)">
 
 <div class=“container”>
 
@@ -63,7 +63,7 @@
 			echo "value=\"".$_SESSION["age"]."\"";
 			unset($_SESSION["age"]);
 		    }
-		?> placeholder="Edad" autocomplete="off" type="number" name="session[age]" id="session_age">
+		?> placeholder="Edad" autocomplete="off" type="text" onkeypress="return event.charCode == 0 || (event.charCode >= 48 && event.charCode <= 57)" name="session[age]" id="session_age">
         </div>
 
 	<div class="form-group">

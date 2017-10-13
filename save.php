@@ -11,7 +11,7 @@
 
     $resultado = null;
 
-    if(isset($_POST["session"]) && count($_POST["session"]) == 5){
+    if(isset($_POST["session"]) && count($_POST["session"]) == 5 && empty($_POST["session"]["name"]) == 0 && empty($_POST["session"]["age"]) == 0 && empty($_POST["session"]["email"]) == 0 && empty($_POST["session"]["password"]) == 0 && empty($_POST["session"]["gender"]) == 0){
 	
     try{
 
